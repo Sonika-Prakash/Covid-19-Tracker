@@ -327,6 +327,10 @@ tr:nth-child(even){
 		display: block; 
 	}
 	
+	table{
+    	width: 100%;
+	}
+	
 	thead tr { 
 		position: absolute;
 		top: -9999px;
