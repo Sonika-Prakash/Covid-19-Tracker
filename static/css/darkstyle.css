@@ -265,3 +265,96 @@ tr:nth-child(even){
     text-decoration: none;
     color: yellow;
 }
+
+.footer-responsive{
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #151515;
+	margin-top: 20px;
+	font-size: 16px;
+	color: white;
+}
+
+.footer-responsive a{
+    text-decoration: none;
+    color: yellow;
+}
+
+@media only screen and (max-width: 1409px) {
+    .top{
+        padding: 16px;
+        z-index: 1;
+    }
+    
+    .navigation{
+        z-index: 2;
+    }
+    
+    .beginning{
+    margin-top: 130px;
+}
+    
+    .stat{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    
+    .news{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    
+    .right{
+        padding-left: 16px;
+    }
+	
+	.footer{
+    	display: none;
+	}
+	
+	.footer-responsive{
+    	display: block;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	td { 
+		/* Behave  like a "row" */ 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		font-weight: bold;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Sl. No."; }
+	td:nth-of-type(2):before { content: "State / UT"; }
+	td:nth-of-type(3):before { content: "Active Cases"; }
+	td:nth-of-type(4):before { content: "Discharged"; }
+	td:nth-of-type(5):before { content: "Deaths"; }
+}
