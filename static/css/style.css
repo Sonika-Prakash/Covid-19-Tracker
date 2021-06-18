@@ -278,6 +278,7 @@ tr:nth-child(even){
     color: yellow;
 }
 
+
 @media only screen and (max-width: 1409px) {
     .top{
         padding: 16px;
@@ -290,7 +291,11 @@ tr:nth-child(even){
     
     .beginning{
     margin-top: 130px;
-}
+    }
+	
+    .faqbeginning{
+        margin-top: 130px;
+    }
     
     .stat{
         width: 100%;
