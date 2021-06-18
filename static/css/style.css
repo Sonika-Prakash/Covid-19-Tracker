@@ -360,3 +360,14 @@ tr:nth-child(even){
 	td:nth-of-type(4):before { content: "Discharged"; }
 	td:nth-of-type(5):before { content: "Deaths"; }
 }
+
+@media only screen and (max-width: 436px) {
+    .faqbeginning{
+        margin-top: 150px;
+        padding-top: 5px;
+    }
+    
+    #faq-img{
+        display: none;
+    }
+}
