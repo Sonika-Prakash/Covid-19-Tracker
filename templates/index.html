@@ -82,6 +82,7 @@
         <div class="tableHidden" id="dd">
             <center>
                 <table border="1">
+		    <thead>
                     <tr>
                     <th>Sl. No.</th>
                     <th>Name of the State / UT</th>
@@ -89,6 +90,7 @@
                     <th>Discharged</th>
                     <th>Deaths</th>
                     </tr>
+		    </thead>
                 
                     <tbody>
                         {% for i in range(state_list|length - 1) %}    
